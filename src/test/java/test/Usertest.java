@@ -65,7 +65,7 @@ public class Usertest{
     }
 
     @Test()
-    public void getsingledata()
+    public void getsingledata ()
     {
         Response response= given().pathParams("id",12).when().get("https://fakerestapi.azurewebsites.net/api/v1/Authors/{id}");
         response.then().log().all();
